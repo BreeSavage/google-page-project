@@ -4,9 +4,15 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Google</title>
+    
     <style>
         html {
             font-size: 10px;
+        }
+
+        html, body {
+            height: 100%;
+            margin: auto;
         }
 
         body {
@@ -21,30 +27,48 @@
             display: inline-block;
         }
 
+        #img-container {
+           text-align: center;
+           padding-top: 100px;
+        }
+
+        .search-body {
+           text-align: center;
+        }
+
+        #search-bar {
+            margin-top: 20px;
+            width: 450px;
+            height: 40px;
+            border-radius: 30px;
+            border: 1px solid lightgrey; 
+        }
+       
+/* 
         #logo {
             display: block;
-            width: 350px;
+            width: 250px;
             height: auto;
             margin: auto;
+        }
+
+        .search-body {
+            text-align: center;
         }
 
         #searchbar {
             width: 100%;
             margin: auto;
             align-items: center;
-
         }
 
-        #search-box {
+        #search-bar {
             display: block;
             width: 50%;
             height: 20px;
             margin: auto;
             margin-top: 20px;
             margin-bottom: 20px;
-            border: solid 2px;
-            border-radius: 10%;
-            border-color: grey;
         }
 
         #search-btns {
@@ -66,8 +90,7 @@
 
         footer li {
             display: inline-block;
-            margin-bottom: 0px;
-        }
+        } */
 
     </style>
 
@@ -85,24 +108,26 @@
         </nav>
     </header>
 
-   
+   <div id="img-container" class="search-body">
         <img src="https://www.google.com/images/branding/googlelogo/1x/googlelogo_color_272x92dp.png"
-        alt="the google logo"
-        id="logo">
+            alt="the google logo"
+            id="logo">
+    </div>
 
+    <div id="search-container" class="search-body">
         <div id="searchbar">
-            <input type="text"
-            name="search"
-            id="search-box"
-            placholder="Search">
+            <input type="search"
+                name="search"
+                id="search-bar"
+                placholder="Search">
         </div>
-        
-        <div id="search-btns">
+            
+        <!-- <div id="search-btns">
             <button class="search-btn">Google Search</button>
             <button class="search-btn">I'm Feeling Lucky</button>
             <p>Google Offered in: <a href="#" id="french">Francais</a></p>
         </div>
-    
+    </div>
 
     <footer>
         <ul id="footer-li">
@@ -113,7 +138,7 @@
             <li><a href="#" class="footer-link">Terms</a></li>
             <li><a href="#" class="footer-link">Settings</a></li>
         </ul>
-    </footer>
+    </footer> -->
 
 
     
