@@ -38,6 +38,10 @@
             color: rgb(73, 73, 73);
         }
 
+        nav a:hover {
+            text-decoration: underline;
+        }
+
         .head-li {
             display:inline-flex;
             margin-top: 20px;
@@ -67,8 +71,14 @@
             margin-top: 20px;
             width: 450px;
             height: 40px;
+            padding-left: 30px;
+            padding-right: 30px;
             border-radius: 30px;
             border: 1px solid lightgrey; 
+        }
+
+        #search-bar:hover {
+            box-shadow: #e4e4e4;
         }
 
         .search-btn {
@@ -99,6 +109,16 @@
            text-decoration: underline;
        }
 
+       #search-icon {
+           position: relative;
+           left: 28px;
+       }
+
+       #mic-icon {
+           position:relative;
+           right: 28px;
+       }
+
        footer {
            position: fixed; 
            bottom: 0px;
@@ -118,6 +138,10 @@
        footer a {
            text-decoration: none;
            color: #5F6368;
+       }
+
+       footer a:hover {
+           text-decoration: underline;
        }
 
        #upper-footer {
@@ -173,10 +197,14 @@
 
     <div id="search-container" class="search-body">
         <div id="searchbar">
+            <i id="search-icon" class="fa fa-search" aria-hidden="true"></i>
+
             <input type="search"
                 name="search"
                 id="search-bar"
                 placholder="Search">
+                
+            <i id="mic-icon" class="fa fa-microphone" aria-hidden="true"></i>
         </div>
 
         <div id="search-btns">
