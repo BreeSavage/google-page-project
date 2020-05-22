@@ -86,73 +86,64 @@
            font-size: 1.4rem;
        }
 
+       .search-btn:hover {
+           border: solid 1px rgb(150, 153, 156);
+       }
+
+       p a {
+           text-decoration: none;
+           color: rgb(4, 4, 165);
+       }
+
+       p a:hover {
+           text-decoration: underline;
+       }
+
        footer {
-           display: inline-flex;
-           margin: 0 10px;
+           position: fixed; 
+           bottom: 0px;
+           width: 100%;
+           background-color: #F2F2F2;
        }
 
        footer li {
+           display: inline-block;
+           padding: 0 15px;
+       }
+
+       .footer-li {
            display: inline-flex;
        }
-
-       #footer-right {
-           float: right;
-       }
-
-
 
        footer a {
            text-decoration: none;
            color: #5F6368;
        }
-       
-/* 
-        #logo {
-            display: block;
-            width: 250px;
-            height: auto;
-            margin: auto;
-        }
 
-        .search-body {
-            text-align: center;
-        }
-
-        #searchbar {
-            width: 100%;
-            margin: auto;
-            align-items: center;
-        }
-
-        #search-bar {
-            display: block;
-            width: 50%;
-            height: 20px;
-            margin: auto;
-            margin-top: 20px;
-            margin-bottom: 20px;
-        }
-
-        #search-btns {
-            width: 100%;
-            display:inline-flex;
-            align-items: center;
-        }
-
-       .search-btn {
-           background-color: rgb(233, 227, 227);
-           color: rgb(105, 104, 104);
-           border-radius: 3%;
-           height: 30px;
+       #upper-footer {
+           background-color: #F2F2F2;
+           line-height: 40px;
+           padding-left: 55px;
+           border-top: solid 1px #e4e4e4;
        }
-        
-        p {
-            display: block;
-        }
 
-        footer li {
-            display: inline-block;
-        } */
+       #canada {
+           color:#5f6368;
+       }
+
+       #lower-footer {
+           border-top: solid 1px #e4e4e4;
+       }
+
+       #footer-right {
+           float: right;
+           margin-right: 40px;
+       }
+
+       #footer-left {
+           float: left;
+       }
+
 
     </style>
 
@@ -199,16 +190,21 @@
     </div>
 
     <footer>
-        <ul class="footer-li" id="footer-left">
-            <li><a href="#" class="footer-link">Advertising</a></li>
-            <li><a href="#" class="footer-link">Business</a></li>
-            <li><a href="#" class="footer-link">How Search Works</a></li>
-        </ul>
-        <ul class="footer-li" id="footer-right"> 
-            <li><a href="#" class="footer-link">Privacy</a></li>
-            <li><a href="#" class="footer-link">Terms</a></li>
-            <li><a href="#" class="footer-link">Settings</a></li>
-        </ul>
+        <div id="upper-footer">
+            <span id="canada">Canada</span>
+        </div>
+        <div id="lower-footer">
+            <ul class="footer-li" id="footer-left">
+                <li><a href="#" class="footer-link">Advertising</a></li>
+                <li><a href="#" class="footer-link">Business</a></li>
+                <li><a href="#" class="footer-link">How Search Works</a></li>
+            </ul>
+            <ul class="footer-li" id="footer-right"> 
+                <li><a href="#" class="footer-link">Privacy</a></li>
+                <li><a href="#" class="footer-link">Terms</a></li>
+                <li><a href="#" class="footer-link">Settings</a></li>
+            </ul>
+        </div>
     </footer>
 
 
